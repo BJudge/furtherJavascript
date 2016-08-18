@@ -1,8 +1,7 @@
 (function (exports) {
 
-
 function noteListView(notelist) {
-  this.notelist = notelist
+  this.notelist = notelist;
 }
 
 noteListView.prototype.getNoteListInHtml = function () {
@@ -10,7 +9,7 @@ noteListView.prototype.getNoteListInHtml = function () {
   this.notelist.getNotes().forEach(function(note)  {
     HTMLString += "<li><div>" + note +"</div></li>";
   });
-   return HTMLString += "</ul>";
+ return HTMLString += "</ul>";
 };
   exports.noteListView = noteListView;
 })(this);
