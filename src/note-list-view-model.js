@@ -6,7 +6,7 @@ function noteListView(notelist) {
 };
 
 noteListView.prototype.noteListModel = function () {
- var listarray = this.notelist.getNotes;
+ var listarray = this.notelist.getNotes();
  var arrayLength = listarray.length;
 
 
