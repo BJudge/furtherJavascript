@@ -1,6 +1,6 @@
 function testNoteController() {
   var newList = new NoteList();
-  var newView = new noteListView(newList);
+  var newView = new NoteListView(newList);
   var newController = new NoteController(newView);
   if (newController.listView === newView) {
     console.log('testNoteController 01: This test has passed');
